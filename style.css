@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background: white;
+    width: 380px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+/* LOGO */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.main-logo{
+    width: 70px;
+}
+
+/* botones inicio */
+#inicio button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#inicio button:first-of-type{
+    background: #007bff;
+    color: white;
+}
+
+#inicio button:first-of-type:hover{
+    background: #0056b3;
+}
+
+#inicio button:last-of-type{
+    background: #444;
+    color: white;
+}
+
+#inicio button:last-of-type:hover{
+    background: #222;
+}
+
+/* ========================= */
+/* 🔐 LOGIN */
+/* ========================= */
+
+.parent{
+    display: flex;
+    justify-content: center;
+}
+
+.form-login{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sub-title h5{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* inputs */
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.input-group i{
+    margin-right: 10px;
+    color: #666;
+}
+
+.input-group input{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+/* botón login */
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* checkbox mantener sesión */
+.keep{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;   /* baja el espacio desde contraseña */
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+.keep label{
+    margin-left: 6px;
+}
+button:hover{
+    background: #0056b3;
+}
+
+/* links opcionales */
+.forget{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.forget a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forget a:hover{
+    text-decoration: underline;
+}
